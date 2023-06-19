@@ -46,7 +46,7 @@ class UserMongooserepository{
             name: document.name,
             lastName: document.lastName,
             email: document.email,
-            role: document?.role,
+            role: document.role,
             orders: document.orders 
         })
     }

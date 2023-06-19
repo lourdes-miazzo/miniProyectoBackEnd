@@ -9,13 +9,11 @@ class SessionMongooserepository{
             }
             return {
                 id: document?._id,
-                firstName: document?.firstName,
+                name: document?.name,
                 lastName: document?.lastName,
                 email: document?.email,
-                age: document?.age,
                 password: document?.password, 
-                role: document?.role, 
-                isAdmin: document?.isAdmin
+                role: document?.role 
             }
     }
     async collate(password, user){
@@ -28,12 +26,10 @@ class SessionMongooserepository{
 
             return {
                 id: document._id,
-                firstName: document.firstName,
+                name: document.name,
                 lastName: document.lastName,
-                email: document.email,
-                age: document.age, 
-                role: document.role, 
-                isAdmin: document.isAdmin
+                email: document.email, 
+                role: document.role
             }
     }
 }
